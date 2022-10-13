@@ -5,7 +5,7 @@ const { UpdateBalance } = require("../controllers/updatebalance");
 const { getBalanceById }  = require("../controllers/getBalanceById");
 
 
-const { FetchTeacherBalanceDetails } = require("../controllers/fetchteacherbalance");
+const { FetchTeacherBalanceDetails } = require("../controllers/fetchTeacherBalance");
 const { AddTeacherBalance } = require("../controllers/addBalanceTeacher");
 const { UpdateTeacherBalance } = require("../controllers/updateteacherbalance");
 const { getTeacherBalanceById }  = require("../controllers/getTeacherBalanceById");
