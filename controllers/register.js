@@ -277,6 +277,12 @@ exports.register = async (req, res) => {
                                       "User Removal from Db failed",
                                     status: false,
                                   });
+                                  res.send({
+                                    error: error,
+                                    statusMessage:
+                                      "User Removal from Db failed",
+                                    status: false,
+                                  });
                                   
                                 }
                               }
@@ -299,10 +305,7 @@ exports.register = async (req, res) => {
                               statusMessage: "User balance added succeded",
                               status: true,
                             });
-                            res.send({
-                              statusMessage: "User balance added succeded",
-                              status: true,
-                            });
+                            
                           }
                         }
                       );
