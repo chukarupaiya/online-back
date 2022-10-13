@@ -2,6 +2,8 @@ const {
   InsertInUserTableQuery,
   InsertInStudentTableQuery,
   InsertInTeacherTableQuery,
+  InsertInBalanceTableQuery,
+  InsertInTeacherBalanceTableQuery,
 } = require("../database/model/insertTable");
 const { select } = require("../service/select");
 const { insert } = require("../service/insert");
