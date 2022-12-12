@@ -2,9 +2,8 @@ const mysql = require("mysql2");
 require("dotenv").config();
 
 exports.db = mysql.createConnection({
-  host: 'sql6.freesqldatabase.com',
-  user:'sql6582494',
-  password:'PSBI2zQEn7',
-  database:'sql6582494',
-
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 });
